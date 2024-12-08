@@ -36,9 +36,9 @@ namespace KoiShowManagement.Services
         {
             return await _registrationRepository.RemoveAsync(entity);
         }
-		public async Task<List<Registration>> Search(string competitionName, string userName, string entryTitle)
+		public async Task<List<Registration>> Search(string competitionName, string userName, string animalName)
 		{
-			return await _registrationRepository.Search(competitionName, userName, entryTitle);
+			return await _registrationRepository.Search(competitionName, userName, animalName);
 		}
 	}
 }
