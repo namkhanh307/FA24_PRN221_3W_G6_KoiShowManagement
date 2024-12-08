@@ -18,15 +18,14 @@ namespace KoiShowManagement.RazorWebApps
             builder.Services.AddScoped<UserService>();
             builder.Services.AddScoped<CompetitionService>();
             builder.Services.AddScoped<AnimalService>();
-            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(options =>
-                {
-                    options.LoginPath = "/Login";
-                    options.AccessDeniedPath = "/Error";
-                });
+            //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //    .AddCookie(options =>
+            //    {
+            //        options.LoginPath = "/Login";
+            //        options.AccessDeniedPath = "/Error";
+            //    });
 
             builder.Services.AddDbContext<FA24_PRN221_3W_G6_KoiShowManagementContext>(options => options.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-            builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
@@ -44,9 +43,8 @@ namespace KoiShowManagement.RazorWebApps
             app.UseRouting();
 
             app.UseAuthentication();
-            app.UseAuthorization();
 
-            app.MapRazorPages().RequireAuthorization();
+            app.MapRazorPages();
 
             app.Run();
         }
