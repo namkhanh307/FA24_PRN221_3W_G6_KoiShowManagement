@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KoiShowManagement.Repositories\KoiShowManagement.Repositories.csproj" />
     <ProjectReference Include="..\KoiShowManagement.Services\KoiShowManagement.Services.csproj" />
   </ItemGroup>
 
