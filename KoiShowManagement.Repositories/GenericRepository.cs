@@ -171,6 +171,10 @@ namespace KoiShowManagement.Repositories
 
             //return await _context.Set<T>().FindAsync(code);
         }
+        public async Task<bool> ExistsByIdAsync(int id)
+        {
+            return await _context.Set<T>().FindAsync(id) != null;
+        }
 
         #region Separating asigned entity and save operators        
 
