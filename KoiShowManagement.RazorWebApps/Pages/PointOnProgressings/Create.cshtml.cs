@@ -16,14 +16,12 @@ namespace Page.Pages.PointOnProgressings
         //private readonly Repo.Models.FA24_SE1702_PRN221_G6_KoiShowManagementContext _context;
         private readonly PointOnProgressingService _pointOnprocessingService;
         private readonly RegistrationService _registrationService;
-        private readonly CompetitionService _competitionService;
         private readonly UserService _userService;
         private readonly CompetitionCategoryService _ccService;    
-        public CreateModel(PointOnProgressingService pointOnProgressingService, CompetitionService competitionCategory, RegistrationService registrationService, UserService userService, CompetitionCategoryService ccService)
+        public CreateModel(PointOnProgressingService pointOnProgressingService, RegistrationService registrationService, UserService userService, CompetitionCategoryService ccService)
         {
             _pointOnprocessingService = pointOnProgressingService;
             _registrationService = registrationService;
-            _competitionService = competitionCategory;
             _userService = userService;
             _ccService = ccService;
         }
