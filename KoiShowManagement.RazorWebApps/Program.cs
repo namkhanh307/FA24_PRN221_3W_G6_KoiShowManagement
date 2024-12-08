@@ -18,6 +18,8 @@ namespace KoiShowManagement.RazorWebApps
             builder.Services.AddScoped<UserService>();
             builder.Services.AddScoped<CompetitionService>();
             builder.Services.AddScoped<AnimalService>();
+            builder.Services.AddScoped<AnimalVarietyService>();
+            builder.Services.AddScoped<CompetitionCategoryService>();
             //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             //    .AddCookie(options =>
             //    {

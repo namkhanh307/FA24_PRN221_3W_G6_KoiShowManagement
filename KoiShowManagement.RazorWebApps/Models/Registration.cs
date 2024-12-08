@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace KoiShowManagement.Repositories.Models;
+namespace KoiShowManagement.RazorWebApps.Models;
 
 public partial class Registration
 {

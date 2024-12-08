@@ -4,15 +4,11 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace KoiShowManagement.Repositories.Models;
+namespace KoiShowManagement.RazorWebApps.Models;
 
-public partial class FA24_PRN221_3W_G6_KoiShowManagementContext : DbContext
+public partial class FA24_SE1702_PRN221_G6_KoiShowManagementContext : DbContext
 {
-    public FA24_PRN221_3W_G6_KoiShowManagementContext()
-    {
-    }
-
-    public FA24_PRN221_3W_G6_KoiShowManagementContext(DbContextOptions<FA24_PRN221_3W_G6_KoiShowManagementContext> options)
+    public FA24_SE1702_PRN221_G6_KoiShowManagementContext(DbContextOptions<FA24_SE1702_PRN221_G6_KoiShowManagementContext> options)
         : base(options)
     {
     }
@@ -40,10 +36,6 @@ public partial class FA24_PRN221_3W_G6_KoiShowManagementContext : DbContext
     public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=KHANG\\KHANGHOANG;Initial Catalog=FA24_SE1702_PRN221_G6_KoiShowManagement;User ID=sa;Password=12345;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
