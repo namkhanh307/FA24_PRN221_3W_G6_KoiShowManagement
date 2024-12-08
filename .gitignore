@@ -397,6 +397,17 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# Build artifacts
 /bin/
 /obj/
+
+# User-specific files
+.vscode/
 /.vs/
+/*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Crash logs
+*.stackdump
