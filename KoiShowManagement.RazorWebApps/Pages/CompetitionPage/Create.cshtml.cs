@@ -13,13 +13,16 @@ namespace KoiShowManagement.RazorWebApp.Pages.CompetitionPage
     public class CreateModel : PageModel
     {
         public readonly CompetitionService _competitionService;
-
-        public CreateModel(CompetitionService competitionService)
+        public readonly CompetitionTypeService _competitionTypeService;
+        public CreateModel(CompetitionService competitionService, CompetitionTypeService competitionTypeService)
         {
             _competitionService = competitionService;
+            _competitionTypeService = competitionTypeService;
         }
-        public IActionResult OnGet()
+        public async Task<IActionResult> OnGet()
         {
+            var selectList = await _competitionTypeService.GetAllAsync();
+            ViewData["CompetitionTypeId"] = new SelectList(selectList, "CompetitionTypeId", "CompetitionTypeName");
             return Page();
         }
 

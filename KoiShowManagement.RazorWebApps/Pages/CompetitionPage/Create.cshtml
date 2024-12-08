@@ -45,14 +45,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Competition.CompetitionType" class="control-label"></label>
-                <input asp-for="Competition.CompetitionType" class="form-control" />
-                <span asp-validation-for="Competition.CompetitionType" class="text-danger"></span>
+                <select asp-for="Competition.CompetitionTypeId" class="form-control" asp-items="ViewBag.CompetitionTypeId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Competition.Status" class="control-label"></label>
                 <input asp-for="Competition.Status" class="form-control" />
                 <span asp-validation-for="Competition.Status" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Competition.NumberOfParticipants" class="control-label"></label>
                 <input asp-for="Competition.NumberOfParticipants" class="form-control" />

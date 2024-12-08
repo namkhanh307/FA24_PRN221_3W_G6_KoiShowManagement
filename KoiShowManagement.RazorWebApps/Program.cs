@@ -19,6 +19,7 @@ namespace KoiShowManagement.RazorWebApps
             builder.Services.AddScoped<RegistrationService>();
             builder.Services.AddScoped<UserService>();
             builder.Services.AddScoped<CompetitionService>();
+            builder.Services.AddScoped<CompetitionTypeService>();
             builder.Services.AddScoped<AnimalService>();
             builder.Services.AddScoped<AnimalVarietyService>();
             builder.Services.AddScoped<CompetitionCategoryService>();

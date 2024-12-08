@@ -8,9 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KoiShowManagement.Repositories
 {
-    public class CompetitionTypeRepositories :GenericRepository<CompetitionTypeRepositories>
+    public class CompetitionTypeRepositories :GenericRepository<CompetitionType>
     {
-        public CompetitionTypeRepositories() { }
-       
     }
 }
