@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\koishowmanagement.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\koishowmanagement.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\competitioncategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\competitioncategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\competitiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\competitiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\fa24_prn221_3w_g6_koishowmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\fa24_prn221_3w_g6_koishowmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\competition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\competition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\koishowmanagement.razorwebapps.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\koishowmanagement.razorwebapps.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|solutionrelative:koishowmanagement.services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.services\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|solutionrelative:koishowmanagement.services\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|solutionrelative:koishowmanagement.services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\registrationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\registrationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.services\\competitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}|KoiShowManagement.Services\\KoiShowManagement.Services.csproj|solutionrelative:koishowmanagement.services\\competitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nobod\\AppData\\Local\\SourceServer\\773a74d1cbc20b2132a00a09a7e1673a467e6798679fc0002818100627cfb995\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nobod\\AppData\\Local\\SourceServer\\09353c632bd282109ee5e71f70c5622d849831be5a48b1048d6ef4a551fe674a\\src\\Mvc\\Mvc.ViewFeatures\\src\\ExpressionMetadataProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\competitionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\competitionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.repositories\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0220A68-1347-46FF-BBF5-75C8B0CA0D72}|KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj|solutionrelative:koishowmanagement.repositories\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\wwwroot\\lib\\table-pagination.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\wwwroot\\lib\\table-pagination.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|c:\\users\\nobod\\documents\\fpt\\2024\\fall24\\prn221_re\\fa24_prn221_3w_g6_koishowmanagement\\koishowmanagement.razorwebapps\\pages\\registrationpages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}|KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj|solutionrelative:koishowmanagement.razorwebapps\\pages\\registrationpages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompetitionType.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\CompetitionType.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\CompetitionType.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\CompetitionType.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\CompetitionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T17:10:51.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T16:48:11.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Program.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Program.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Program.cs",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:28:09.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\User.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\User.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:25:04.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\Role.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:25:02.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAIBJwAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T16:22:36.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\UserRepository.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:20:15.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AnimalService.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\AnimalService.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Services\\AnimalService.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\AnimalService.cs",
+              "RelativeToolTip": "KoiShowManagement.Services\\AnimalService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:18:46.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwDgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:17:59.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KoiShowManagement.RazorWebApps",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\KoiShowManagement.RazorWebApps.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-07T16:17:37.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Competition.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\Competition.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\Competition.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\Competition.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\Competition.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:02:38.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompetitionCategory.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\CompetitionCategory.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\CompetitionCategory.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\CompetitionCategory.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\CompetitionCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:02:37.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Delete.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Delete.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T15:50:54.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Details.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Details.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Details.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAIBJwAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T15:50:42.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Edit.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Edit.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwB4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T15:50:37.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAEwB4AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T15:50:28.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KoiShowManagement.Repositories.csproj",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\KoiShowManagement.Repositories.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-07T15:48:54.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Monitor.CoreCLR.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\AppData\\Local\\SourceServer\\773a74d1cbc20b2132a00a09a7e1673a467e6798679fc0002818100627cfb995\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\773a74d1cbc20b2132a00a09a7e1673a467e6798679fc0002818100627cfb995\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
+              "ToolTip": "C:\\Users\\nobod\\AppData\\Local\\SourceServer\\773a74d1cbc20b2132a00a09a7e1673a467e6798679fc0002818100627cfb995\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\773a74d1cbc20b2132a00a09a7e1673a467e6798679fc0002818100627cfb995\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAApwJsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T01:34:29.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ExpressionMetadataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\AppData\\Local\\SourceServer\\09353c632bd282109ee5e71f70c5622d849831be5a48b1048d6ef4a551fe674a\\src\\Mvc\\Mvc.ViewFeatures\\src\\ExpressionMetadataProvider.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\09353c632bd282109ee5e71f70c5622d849831be5a48b1048d6ef4a551fe674a\\src\\Mvc\\Mvc.ViewFeatures\\src\\ExpressionMetadataProvider.cs",
+              "ToolTip": "C:\\Users\\nobod\\AppData\\Local\\SourceServer\\09353c632bd282109ee5e71f70c5622d849831be5a48b1048d6ef4a551fe674a\\src\\Mvc\\Mvc.ViewFeatures\\src\\ExpressionMetadataProvider.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\09353c632bd282109ee5e71f70c5622d849831be5a48b1048d6ef4a551fe674a\\src\\Mvc\\Mvc.ViewFeatures\\src\\ExpressionMetadataProvider.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAApwFYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T01:18:59.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:28:34.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CompetitionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\CompetitionRepository.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\CompetitionRepository.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\CompetitionRepository.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\CompetitionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:28:31.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FA24_PRN221_3W_G6_KoiShowManagementContext.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\FA24_PRN221_3W_G6_KoiShowManagementContext.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\FA24_PRN221_3W_G6_KoiShowManagementContext.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\FA24_PRN221_3W_G6_KoiShowManagementContext.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\FA24_PRN221_3W_G6_KoiShowManagementContext.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAUwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T08:47:19.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "table-pagination.js",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\wwwroot\\lib\\table-pagination.js",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\wwwroot\\lib\\table-pagination.js",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\wwwroot\\lib\\table-pagination.js",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\wwwroot\\lib\\table-pagination.js",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBgAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-28T02:38:00.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\appsettings.json",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\appsettings.json",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\appsettings.json",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T02:20:27.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AnimalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\AnimalRepository.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\AnimalRepository.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\AnimalRepository.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\AnimalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T02:01:15.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegistrationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\RegistrationRepository.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\RegistrationRepository.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\RegistrationRepository.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\RegistrationRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:59:48.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegistrationService.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\RegistrationService.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Services\\RegistrationService.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\RegistrationService.cs",
+              "RelativeToolTip": "KoiShowManagement.Services\\RegistrationService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:59:35.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CompetitionService.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\CompetitionService.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Services\\CompetitionService.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\CompetitionService.cs",
+              "RelativeToolTip": "KoiShowManagement.Services\\CompetitionService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:59:34.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\UserService.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Services\\UserService.cs",
+              "RelativeToolTip": "KoiShowManagement.Services\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:36:43.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\Registration.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.Repositories\\Models\\Registration.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.Repositories\\Models\\Registration.cs",
+              "RelativeToolTip": "KoiShowManagement.Repositories\\Models\\Registration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:56:12.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAIBJwAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T14:50:50.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml.cs",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:50:49.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\nobod\\Documents\\FPT\\2024\\FALL24\\PRN221_RE\\FA24_PRN221_3W_G6_KoiShowManagement\\KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml.cs",
+              "RelativeToolTip": "KoiShowManagement.RazorWebApps\\Pages\\RegistrationPages\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:47:15.255Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

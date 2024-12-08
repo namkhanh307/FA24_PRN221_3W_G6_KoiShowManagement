@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KoiShowManagement.RazorWebApps.props" />
+</Project>

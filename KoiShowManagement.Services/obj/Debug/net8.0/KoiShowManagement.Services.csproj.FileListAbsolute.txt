@@ -1,0 +1,16 @@
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\bin\Debug\net8.0\KoiShowManagement.Services.deps.json
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\bin\Debug\net8.0\KoiShowManagement.Services.dll
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\bin\Debug\net8.0\KoiShowManagement.Services.pdb
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\bin\Debug\net8.0\KoiShowManagement.Repositories.dll
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\bin\Debug\net8.0\KoiShowManagement.Repositories.pdb
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.csproj.AssemblyReference.cache
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.AssemblyInfoInputs.cache
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.AssemblyInfo.cs
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.csproj.CoreCompileInputs.cache
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.sourcelink.json
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowM.3C3BD350.Up2Date
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.dll
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\refint\KoiShowManagement.Services.dll
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\KoiShowManagement.Services.pdb
+C:\Users\nobod\Documents\FPT\2024\FALL24\PRN221_RE\FA24_PRN221_3W_G6_KoiShowManagement\KoiShowManagement.Services\obj\Debug\net8.0\ref\KoiShowManagement.Services.dll

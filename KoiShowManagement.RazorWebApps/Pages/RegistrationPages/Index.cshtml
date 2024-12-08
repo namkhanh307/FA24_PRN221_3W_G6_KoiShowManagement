@@ -1,0 +1,141 @@
+﻿@page
+@model KoiShowManagement.RazorWebApps.Pages.RegistrationPages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<form method="get" id="searchForm">
+    <div class="form-group">
+        <label for="CompetitionName">Competition Name</label>
+        <input type="text" class="form-control" id="CompetitionName" name="CompetitionName" value="@Model.CompetitionName" placeholder="Enter competition name">
+    </div>
+    <div class="form-group">
+        <label for="UserName">User Name</label>
+        <input type="text" class="form-control" id="UserName" name="UserName" value="@Model.UserName" placeholder="Enter user name">
+    </div>
+    <div class="form-group">
+        <label for="AnimalName">Animal Name</label>
+        <input type="text" class="form-control" id="AnimalName" name="AnimalName" value="@Model.AnimalName" placeholder="Enter animal name">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-primary me-2" onclick="clearFields()">Clear</button>
+        </div>
+</form>
+<div id="data-container">
+    <table class="table" id="idTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].CheckInStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].RegistrationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].ApprovalStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Notes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].HealthStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Shape)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Pattern)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].IsDeleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Animal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Competition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].User)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+        <tbody id="table-body">
+@foreach (var item in Model.Registration) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckInStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegistrationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApprovalStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HealthStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shape)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pattern)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDeleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Animal.AnimalName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Competition.CompetitionName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Email)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.RegistrationId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.RegistrationId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.RegistrationId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/table-pagination.js"></script>
+<script>
+    $("#idTable").createTablePagination({
+        rowPerPage: 5,
+    });
+    function clearFields() {
+        document.getElementById('AnimalName').value = '';
+        document.getElementById('UserName').value = '';
+        document.getElementById('CompetitionName').value = '';
+        document.getElementById('searchForm').submit();
+    }
+</script>
