@@ -14,15 +14,15 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Registration.CompetitionId" class="control-label"></label>
+                <label asp-for="Registration.Competition.CompetitionName" class="control-label"></label>
                 <select asp-for="Registration.CompetitionId" class ="form-control" asp-items="ViewBag.CompetitionId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Registration.AnimalId" class="control-label"></label>
+                <label asp-for="Registration.Animal.AnimalName" class="control-label"></label>
                 <select asp-for="Registration.AnimalId" class ="form-control" asp-items="ViewBag.AnimalId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Registration.UserId" class="control-label"></label>
+                <label asp-for="Registration.User.Username" class="control-label"></label>
                 <select asp-for="Registration.UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
             </div>
             <div class="form-group">
