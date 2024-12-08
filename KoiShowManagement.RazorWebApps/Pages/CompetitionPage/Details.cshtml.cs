@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using KoiShowManagement.Repositories.Models;
-using KoiShowManagement.Service;
+using KoiShowManagement.Services;
 
 namespace KoiShowManagement.RazorWebApp.Pages.CompetitionPage
 {

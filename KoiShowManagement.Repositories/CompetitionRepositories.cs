@@ -20,7 +20,7 @@ namespace KoiShowManagement.Repositories
         public async Task<List<Competition>> GetAll()
         {
             var referenceKey = await _context.Competitions.Include
-                (m => m.CompetitionTypeNavigation).ToListAsync();
+                (m => m.CompetitionType).ToListAsync();
             return referenceKey;
         }
     }

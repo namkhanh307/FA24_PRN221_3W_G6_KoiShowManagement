@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using KoiShowManagement.Repositories.Models;
-using KoiShowManagement.Service;
+using KoiShowManagement.Services;
 
 namespace KoiShowManagement.RazorWebApp.Pages.CompetitionPage
 {
     public class CreateModel : PageModel
     {
-        public  CompetitionService _competitionService;
+        public readonly CompetitionService _competitionService;
 
         public CreateModel(CompetitionService competitionService)
         {

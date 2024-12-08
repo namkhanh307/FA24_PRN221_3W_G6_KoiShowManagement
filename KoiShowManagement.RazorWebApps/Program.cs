@@ -20,6 +20,7 @@ namespace KoiShowManagement.RazorWebApps
             builder.Services.AddScoped<AnimalService>();
             builder.Services.AddScoped<AnimalVarietyService>();
             builder.Services.AddScoped<CompetitionCategoryService>();
+            builder.Services.AddSession();
             //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             //    .AddCookie(options =>
             //    {
@@ -41,7 +42,7 @@ namespace KoiShowManagement.RazorWebApps
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthentication();

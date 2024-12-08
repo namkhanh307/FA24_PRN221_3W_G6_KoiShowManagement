@@ -12,8 +12,6 @@
     <input type="submit" value="Search" />
 </form>
 
-@HttpContext.Session.GetString("UserEmail");
-
 <p>
     <a asp-page="Create">Create New</a>
 </p>
@@ -75,7 +73,7 @@
                 @Html.DisplayNameFor(model => model.Competition[0].IsDeleted)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Competition[0].CompetitionTypeNavigation.CompetitionTypeName)
+                @Html.DisplayNameFor(model => model.Competition[0].CompetitionType.CompetitionTypeName)
             </th>
             <th></th>
         </tr>
@@ -138,7 +136,7 @@
                     @Html.DisplayFor(modelItem => item.IsDeleted)
                 </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CompetitionTypeNavigation.CompetitionTypeName)
+                @Html.DisplayFor(modelItem => item.CompetitionType.CompetitionTypeName)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.CompetitionId">Edit</a> |
