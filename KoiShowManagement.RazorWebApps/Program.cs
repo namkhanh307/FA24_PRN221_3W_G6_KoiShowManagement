@@ -1,8 +1,10 @@
 using KoiShowManagement.Repositories.Models;
+using KoiShowManagement.Service;
 using KoiShowManagement.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Service;
 
 namespace KoiShowManagement.RazorWebApps
 {
@@ -21,6 +23,10 @@ namespace KoiShowManagement.RazorWebApps
             builder.Services.AddScoped<AnimalVarietyService>();
             builder.Services.AddScoped<CompetitionCategoryService>();
             builder.Services.AddSession();
+            builder.Services.AddScoped<IScoreService, ScoreService>();
+            builder.Services.AddHostedService<ScoreWorker>();
+            builder.Services.AddScoped<PointOnProgressingService>();
+            builder.Services.AddSignalR();
             //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             //    .AddCookie(options =>
             //    {
@@ -48,7 +54,7 @@ namespace KoiShowManagement.RazorWebApps
             app.UseAuthentication();
 
             app.MapRazorPages();
-
+            app.MapHub<NotificationHub>("/notificationHub");
             app.Run();
         }
     }
