@@ -15,11 +15,11 @@ public partial class Registration
 
     public int? UserId { get; set; }
 
-    public bool? CheckInStatus { get; set; }
+    public bool CheckInStatus { get; set; }
 
     public DateTime? RegistrationDate { get; set; }
 
-    public bool? ApprovalStatus { get; set; }
+    public bool ApprovalStatus { get; set; }
 
     public string Notes { get; set; }
 

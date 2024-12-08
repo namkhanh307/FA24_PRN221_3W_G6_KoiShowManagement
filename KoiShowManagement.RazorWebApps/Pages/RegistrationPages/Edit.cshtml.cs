@@ -45,7 +45,7 @@ namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
             Registration = registration;
                 ViewData["AnimalId"] = new SelectList(await _animalService.GetAllAsync(), "AnimalId", "AnimalName");
                 ViewData["CompetitionId"] = new SelectList(await _competitionService.GetAllAsync(), "CompetitionId", "CompetitionName");
-                ViewData["UserId"] = new SelectList(await _userService.GetAllAsync(), "UserId", "Email");
+                ViewData["UserId"] = new SelectList(await _userService.GetAllAsync(), "UserId", "Username");
                 return Page();
         }
 
