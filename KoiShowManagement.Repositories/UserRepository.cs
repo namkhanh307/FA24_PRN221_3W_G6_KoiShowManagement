@@ -12,8 +12,12 @@ namespace KoiShowManagement.Repositories
     {
         public async Task<User?> Login(string username, string password)
         {
-            return await _context.Users.Include(u => u.Role).SingleOrDefaultAsync(u => u.Username.Equals(username) && u.Password.Equals(password));   
+            return await _context.Users
+                .Include(u => u.Role)
+                .SingleOrDefaultAsync(u =>
+                    u.Username.Equals(username) &&
+                    u.Password.Equals(password) &&
+                    u.IsDeleted != true);
         }
-
     }
 }
