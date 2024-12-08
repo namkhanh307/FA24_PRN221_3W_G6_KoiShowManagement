@@ -18,22 +18,24 @@ namespace Page.Pages.PointOnProgressings
         private readonly RegistrationService _registrationService;
         private readonly CompetitionService _competitionService;
         private readonly UserService _userService;
-        public CreateModel(PointOnProgressingService pointOnProgressingService, CompetitionService competitionCategory, RegistrationService registrationService, UserService userService)
+        private readonly CompetitionCategoryService _ccService;    
+        public CreateModel(PointOnProgressingService pointOnProgressingService, CompetitionService competitionCategory, RegistrationService registrationService, UserService userService, CompetitionCategoryService ccService)
         {
             _pointOnprocessingService = pointOnProgressingService;
             _registrationService = registrationService;
             _competitionService = competitionCategory;
             _userService = userService;
+            _ccService = ccService;
         }
 
         public async Task<IActionResult> OnGet()
         {
-            var cate = await _competitionService.GetAllAsync();
-        ViewData["CategoryId"] = new SelectList(cate, "CategoryId", "CategoryName");
+            var competitionCategories = await _ccService.GetAll();
+            ViewData["CategoryId"] = new SelectList(competitionCategories, "CategoryId", "CategoryName");
             var user = await _userService.GetAllAsync();
-        ViewData["JuryId"] = new SelectList(user, "UserId", "Email");
+            ViewData["JuryId"] = new SelectList(user, "UserId", "Email");
             var regis = await _registrationService.GetAllAsync();
-        ViewData["RegistrationId"] = new SelectList(regis, "RegistrationId", "RegistrationId");
+            ViewData["RegistrationId"] = new SelectList(regis, "RegistrationId", "RegistrationId");
             return Page();
         }
 
