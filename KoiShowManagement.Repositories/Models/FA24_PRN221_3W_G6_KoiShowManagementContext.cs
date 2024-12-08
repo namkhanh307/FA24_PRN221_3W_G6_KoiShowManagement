@@ -43,7 +43,7 @@ public partial class FA24_PRN221_3W_G6_KoiShowManagementContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=NAMKHANH;Initial Catalog=FA24_SE1702_3W_PRN221_G6_KoiShowManagement;User ID=sa;Password=12345678;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-MONPITS;Initial Catalog=FA24_SE1702_PRN221_G6_KoiShowManagement;User ID=sa;Password=12345;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -1,0 +1,117 @@
+﻿@page
+@model FA24_PRN221_3W_G6_KoiShowManagement.Pages.FinalResultsPage.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].ResultName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].ResultDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].TotalScore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].Rank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].Comments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].IsFinalized)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].IsPublished)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].PrizeAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].PrizeDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].IsDeleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].CategoryNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalResult[0].Competition)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FinalResult) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalScore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsFinalized)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPublished)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrizeAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrizeDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDeleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryNavigation.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Competition.CompetitionId)
+            </td>
+            <td>
+                
+                <a asp-page="./Details" asp-route-id="@item.CompetitionResultId">Details</a> |
+                    @if (User.IsInRole("Manager")){
+                <a asp-page="./Edit" asp-route-id="@item.CompetitionResultId">Edit</a> 
+                <a asp-page="./Delete" asp-route-id="@item.CompetitionResultId">Delete</a>
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

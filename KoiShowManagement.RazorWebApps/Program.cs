@@ -1,3 +1,4 @@
+using KoiShowManagement.Repositories;
 using KoiShowManagement.Repositories.Models;
 using KoiShowManagement.Service;
 using KoiShowManagement.Services;
@@ -14,6 +15,26 @@ namespace KoiShowManagement.RazorWebApps
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Configure cookie
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+             {
+             options.LoginPath = "/Account/Login";
+             options.AccessDeniedPath = "/Account/AccessDenied";
+             options.Cookie.Name = "KoiShowAuth";
+             options.Cookie.HttpOnly = true;
+             options.ExpireTimeSpan = TimeSpan.FromHours(1);
+             options.SlidingExpiration = true;
+             });
+
+            builder.Services.AddAuthorization();
+
+            builder.Services.AddRazorPages(options =>
+            {
+                options.Conventions.AllowAnonymousToPage("/Account/Login");
+                options.Conventions.AllowAnonymousToPage("/Account/AccessDenied");
+            });
+
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddScoped<RegistrationService>();
@@ -28,6 +49,8 @@ namespace KoiShowManagement.RazorWebApps
             builder.Services.AddHostedService<ScoreWorker>();
             builder.Services.AddScoped<PointOnProgressingService>();
             builder.Services.AddSignalR();
+            builder.Services.AddScoped<FinalResultService>();
+            builder.Services.AddScoped<UserRepository>();
             //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             //    .AddCookie(options =>
             //    {
@@ -53,6 +76,16 @@ namespace KoiShowManagement.RazorWebApps
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.Use(async (context, next) =>
+            {
+                var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
+                logger.LogInformation($"Request path: {context.Request.Path}");
+                logger.LogInformation($"User authenticated: {context.User.Identity.IsAuthenticated}");
+                
+                await next();
+            });
 
             app.MapRazorPages();
             app.MapHub<NotificationHub>("/notificationHub");

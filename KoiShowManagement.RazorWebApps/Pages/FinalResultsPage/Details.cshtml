@@ -1,0 +1,107 @@
+﻿@page
+@model FA24_PRN221_3W_G6_KoiShowManagement.Pages.FinalResultsPage.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Final Result</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.ResultName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.ResultName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.ResultDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.ResultDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.TotalScore)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.TotalScore)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.Rank)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.Rank)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.Comments)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.Comments)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.IsFinalized)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.IsFinalized)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.IsPublished)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.IsPublished)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.Category)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.Category)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.Status)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.PrizeAmount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.PrizeAmount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.PrizeDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.PrizeDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.IsDeleted)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.CategoryNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.CategoryNavigation.CategoryName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalResult.Competition)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FinalResult.Competition.CompetitionId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <a asp-page="./Edit" asp-route-id="@Model.FinalResult.CompetitionResultId" class="btn btn-warning">Edit</a>
+        <a asp-page="./Delete" asp-route-id="@Model.FinalResult.CompetitionResultId" class="btn btn-danger">Delete</a>
+    }
+</div>
