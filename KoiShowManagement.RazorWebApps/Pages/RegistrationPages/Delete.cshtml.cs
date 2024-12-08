@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using KoiShowManagement.Repositories.Models;
 using KoiShowManagement.Services;
+using Service;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
 {
@@ -16,13 +18,14 @@ namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
         private readonly UserService _userService;
         private readonly CompetitionService _competitionService;
         private readonly AnimalService _animalService;
-
-        public DeleteModel(RegistrationService registrationService, UserService userService, CompetitionService competitionService, AnimalService animalService)
+        private readonly PointOnProgressingService _pointOnProgressingService;
+        public DeleteModel(RegistrationService registrationService, UserService userService, CompetitionService competitionService, AnimalService animalService, PointOnProgressingService pointOnProgressingService)
         {
             _registrationService = registrationService;
             _userService = userService;
             _competitionService = competitionService;
             _animalService = animalService;
+            _pointOnProgressingService = pointOnProgressingService;
         }
 
         [BindProperty]
@@ -58,6 +61,13 @@ namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
             var registration = await _registrationService.GetByIdAsync(id);
             if (registration != null)
             {
+                int count = _pointOnProgressingService.GetPointByRegistrationId(id);
+                if (count > 0)
+                {
+                    ViewData["Error"] = "Points are already associated with this registration ID.";
+                    return Page();
+                }
+
                 Registration = registration;
                 await _registrationService.RemoveAsync(Registration);
             }

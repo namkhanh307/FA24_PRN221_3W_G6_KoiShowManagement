@@ -60,5 +60,10 @@ namespace Service
         //{
         //    return _repository.Search(bankNo, holderName, holderTaxCode);
         //}
+
+        public int GetPointByRegistrationId(int? registrationId)
+        {
+           return _repository.GetPointByRegistrationId(registrationId);
+        }
     }
 }

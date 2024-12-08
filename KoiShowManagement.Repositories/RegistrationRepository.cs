@@ -33,6 +33,5 @@ namespace KoiShowManagement.Repositories
 		{
 			return await _context.Registrations.Where(r => (r.Competition.CompetitionName.Contains(competitionName) || string.IsNullOrWhiteSpace(competitionName)) && (r.User.Username.Contains(userName) || string.IsNullOrWhiteSpace(userName)) && (r.Animal.AnimalName.Contains(animalName) || string.IsNullOrWhiteSpace(animalName))).Include(r => r.User).Include(r => r.Animal).Include(r => r.Competition).ToListAsync();
 		}
-
-	}
+    }
 }

@@ -4,6 +4,12 @@
 @{
     ViewData["Title"] = "Delete";
 }
+@if (ViewData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["Error"]
+    </div>
+}
 
 <h1>Delete</h1>
 

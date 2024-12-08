@@ -74,5 +74,9 @@ namespace Repo
                 PageIndex = pageIndex
             };
         }
+        public int GetPointByRegistrationId(int? registrationId)
+        {
+            return  _context.PointOnProgressings.Where(p => p.RegistrationId == registrationId).ToList().Count;
+        }
     }
 }
