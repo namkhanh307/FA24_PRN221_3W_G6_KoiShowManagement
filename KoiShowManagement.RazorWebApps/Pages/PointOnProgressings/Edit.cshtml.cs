@@ -16,13 +16,13 @@ namespace Page.Pages.PointOnProgressings
     {
         private readonly PointOnProgressingService _pointOnprocessingService;
         private readonly RegistrationService _registrationService;
-        private readonly CompetitionService _competitionService;
+        private readonly CompetitionCategoryService _competitionCategoryService;
         private readonly UserService _userService;
-        public EditModel(PointOnProgressingService pointOnProgressingService, CompetitionService competitionCategory, RegistrationService registrationService, UserService userService)
+        public EditModel(PointOnProgressingService pointOnProgressingService, CompetitionCategoryService competitionCategoryService, RegistrationService registrationService, UserService userService)
         {
             _pointOnprocessingService = pointOnProgressingService;
             _registrationService = registrationService;
-            _competitionService = competitionCategory;
+            _competitionCategoryService = competitionCategoryService;
             _userService = userService;
         }
 
@@ -42,7 +42,7 @@ namespace Page.Pages.PointOnProgressings
                 return NotFound();
             }
             PointOnProgressing = pointonprogressing;
-            var cate = await _competitionService.GetAllAsync();
+            var cate = await _competitionCategoryService.GetAll();
             ViewData["CategoryId"] = new SelectList(cate, "CategoryId", "CategoryName");
             var user = await _userService.GetAllAsync();
             ViewData["JuryId"] = new SelectList(user, "UserId", "Email");

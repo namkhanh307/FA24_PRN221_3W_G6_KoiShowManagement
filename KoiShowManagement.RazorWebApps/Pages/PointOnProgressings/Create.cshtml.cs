@@ -16,19 +16,19 @@ namespace Page.Pages.PointOnProgressings
         //private readonly Repo.Models.FA24_SE1702_PRN221_G6_KoiShowManagementContext _context;
         private readonly PointOnProgressingService _pointOnprocessingService;
         private readonly RegistrationService _registrationService;
-        private readonly CompetitionService _competitionService;
+        private readonly CompetitionCategoryService _competitionCategoryService;
         private readonly UserService _userService;
-        public CreateModel(PointOnProgressingService pointOnProgressingService, CompetitionService competitionCategory, RegistrationService registrationService, UserService userService)
+        public CreateModel(PointOnProgressingService pointOnProgressingService, CompetitionCategoryService competitionCategoryService, RegistrationService registrationService, UserService userService)
         {
             _pointOnprocessingService = pointOnProgressingService;
             _registrationService = registrationService;
-            _competitionService = competitionCategory;
+            _competitionCategoryService = competitionCategoryService;
             _userService = userService;
         }
 
         public async Task<IActionResult> OnGet()
         {
-            var cate = await _competitionService.GetAllAsync();
+            var cate = await _competitionCategoryService.GetAll();
         ViewData["CategoryId"] = new SelectList(cate, "CategoryId", "CategoryName");
             var user = await _userService.GetAllAsync();
         ViewData["JuryId"] = new SelectList(user, "UserId", "Email");
