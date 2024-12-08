@@ -171,9 +171,6 @@ namespace KoiShowManagement.Repositories
 
             //return await _context.Set<T>().FindAsync(code);
         }
-
-        #region Separating asigned entity and save operators        
-
         public void PrepareCreate(T entity)
         {
             _context.Add(entity);
@@ -199,7 +196,25 @@ namespace KoiShowManagement.Repositories
         {
             return await _context.SaveChangesAsync();
         }
+        public async Task<bool> ExistsByIdAsync(int id)
+        {
+            return await _context.Set<T>().FindAsync(id) != null;
+        }
 
-        #endregion Separating asign entity and save operators
+        public async Task<bool> ExistsByIdAsync(int? id)
+        {
+            if (id == null) return false;
+            return await _context.Set<T>().FindAsync(id) != null;
+        }
+        public async Task<bool> ExistsByIdAsync(string code)
+        {
+            if (string.IsNullOrEmpty(code)) return false;
+            return await _context.Set<T>().FindAsync(code) != null;
+        }
+        public async Task<bool> ExistsByIdAsync(Guid code)
+        {
+            return await _context.Set<T>().FindAsync(code) != null;
+        }
+
     }
 }

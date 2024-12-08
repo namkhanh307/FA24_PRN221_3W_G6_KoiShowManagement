@@ -1,0 +1,127 @@
+﻿@page
+@model Page.Pages.PointOnProgressings.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<form method="get">
+    <input type="text" name="searchTerm1" />
+    <input type="text" name="searchTerm2" />
+    <input type="text" name="searchTerm3" />
+    <input type="submit" value="Search" />
+
+</form>
+
+<p>
+    <form method="post" asp-page-handler="StartCalculation">
+        <button type="submit">Start Auto Calculate Total Score</button>
+    </form>
+    <form method="post" asp-page-handler="StopCalculation">
+        <button type="submit">Stop Calculation</button>
+    </form>
+</p>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].ShapePoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].ColorPoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].PatternPoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].PointStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].JudgeRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].PenaltyPoints)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].TotalScore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].IsDeleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].Jury)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointOnProgressing[0].Registration)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.PointOnProgressing) {
+        <tr data-point-id="@item.PointId">
+            <td>
+                @Html.DisplayFor(modelItem => item.ShapePoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColorPoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatternPoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PointStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JudgeRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PenaltyPoints)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalScore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDeleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Jury.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Registration.RegistrationId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PointId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PointId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PointId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<ul class="pagination">
+    @for (var i = 1; i <= Model.TotalPages; i++)
+    {
+        <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+            <a class="page-link" asp-route-pageIndex="@i">@i</a>
+        </li>
+    }
+</ul>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/delete.js"></script>
