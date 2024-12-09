@@ -19,5 +19,13 @@ namespace KoiShowManagement.Repositories
                     u.Password.Equals(password) &&
                     u.IsDeleted != true);
         }
+        public async Task<List<User>> GetAllAsync()
+        {
+            return await _context.Users.Include(u => u.Role).ToListAsync();
+        }
+        public int Check(string userName)
+        {
+            return _context.Users.Where(u => u.Username == userName).Count();
+        }
     }
 }

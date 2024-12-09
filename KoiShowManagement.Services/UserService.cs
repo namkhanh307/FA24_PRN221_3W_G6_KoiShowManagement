@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace KoiShowManagement.Services
 {
@@ -24,6 +25,14 @@ namespace KoiShowManagement.Services
         public async Task<User?> Login(string username, string password)
         {
             return await _userRepository.Login(username, password);
+        }
+        public async Task<int> Create(User user)
+        {
+            return await _userRepository.CreateAsync(user);
+        }
+        public int Check(string userName)
+        {
+            return _userRepository.Check(userName);
         }
     }
 }
