@@ -3,6 +3,18 @@
 
 @{
     ViewData["Title"] = "Create";
+    if (ViewData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @ViewData["Error"]
+        </div>
+    }
+    string role = User.Claims.FirstOrDefault(c => c.Type == "Role").Value;
+    if (role != "Manager")
+    {
+        Response.Redirect("/PermissionAlert");
+    }
+
 }
 
 <h1>Create</h1>
@@ -48,7 +60,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Registration.Image" class="control-label"></label>
-                <input asp-for="Registration.Image" class="form-control" />
+                <input asp-for="Registration.Image" type="file" class="form-control" />
                 <span asp-validation-for="Registration.Image" class="text-danger"></span>
             </div>
             <div class="form-group">

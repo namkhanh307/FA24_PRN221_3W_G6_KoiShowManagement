@@ -3,12 +3,17 @@
 
 @{
     ViewData["Title"] = "Delete";
-}
-@if (ViewData["Error"] != null)
-{
-    <div class="alert alert-danger">
-        @ViewData["Error"]
-    </div>
+    if (ViewData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @ViewData["Error"]
+        </div>
+    }
+    string role = User.Claims.FirstOrDefault(c => c.Type == "Role").Value;
+    if (role != "Manager")
+    {
+        Response.Redirect("/PermissionAlert");
+    }
 }
 
 <h1>Delete</h1>

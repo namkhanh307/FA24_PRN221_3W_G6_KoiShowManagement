@@ -40,5 +40,11 @@ namespace KoiShowManagement.Services
 		{
 			return await _registrationRepository.Search(competitionName, userName, animalName);
 		}
-	}
+        public int CheckDuplicateRegistration(int? competitionId, int? userId, int? animalId)
+        {
+            return _registrationRepository.CheckDuplicateRegistration(competitionId, userId, animalId);
+        }
+
+
+    }
 }

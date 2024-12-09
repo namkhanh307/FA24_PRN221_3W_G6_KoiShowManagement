@@ -3,13 +3,26 @@
 
 @{
     ViewData["Title"] = "Index";
+    string role = User.Claims.FirstOrDefault(c => c.Type == "Role").Value;
+    if (role != "Examiner" && role != "Manager")
+    {
+        Response.Redirect("/PermissionAlert");
+    }
+
 }
 
 <h1>Index</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+@{
+    if (role == "Manager")
+    {
+        <p>
+            <a asp-page="Create">Create New</a>
+        </p>
+    }
+
+}
+
 <form method="get" id="searchForm">
     <div class="form-group">
         <label for="CompetitionName">Competition Name</label>
@@ -117,9 +130,14 @@
                 @Html.DisplayFor(modelItem => item.User.Email)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.RegistrationId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.RegistrationId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.RegistrationId">Delete</a>
+                @{
+                    if (role == "Manager")
+                    {
+                        <a asp-page="./Edit" asp-route-id="@item.RegistrationId">Edit</a>
+                        <a asp-page="./Delete" asp-route-id="@item.RegistrationId">Delete</a>
+                    }
+                }                   
+                <a asp-page="./Details" asp-route-id="@item.RegistrationId">Details</a>
             </td>
         </tr>
 }

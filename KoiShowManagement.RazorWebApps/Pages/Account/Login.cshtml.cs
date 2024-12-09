@@ -66,7 +66,8 @@ namespace FA24_PRN221_3W_G6_KoiShowManagement.Pages.Account
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.Username),
-                    new Claim("UserId", user.UserId.ToString())
+                    new Claim("UserId", user.UserId.ToString()),
+                    new Claim("Role", user.Role.RoleName.ToString())
                 };
 
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

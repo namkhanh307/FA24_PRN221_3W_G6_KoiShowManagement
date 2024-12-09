@@ -41,11 +41,24 @@ namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
         {
             if (!ModelState.IsValid)
             {
+                await PopulateData();
                 return Page();
             }
-
+            int count = _registrationService.CheckDuplicateRegistration(Registration.CompetitionId, Registration.UserId, Registration.AnimalId);
+            if (count > 0)
+            {
+                ViewData["Error"] = "This koi of user has been registered!";
+                await PopulateData();
+                return Page();
+            }
             await _registrationService.CreateAsync(Registration);
             return RedirectToPage("./Index");
+        }
+        private async Task PopulateData()
+        {
+            ViewData["AnimalId"] = new SelectList(await _animalService.GetAllAsync(), "AnimalId", "AnimalName");
+            ViewData["CompetitionId"] = new SelectList(await _competitionService.GetAllAsync(), "CompetitionId", "CompetitionName");
+            ViewData["UserId"] = new SelectList(await _userService.GetAllAsync(), "UserId", "Username");
         }
     }
 }

@@ -54,13 +54,25 @@ namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
-            {
+            { 
+                await PopulateData();
                 return Page();
             }
 
 
             try
             {
+                Registration currentRegistration = await _registrationService.GetByIdAsync(Registration.RegistrationId);
+                if (Registration.CompetitionId != currentRegistration.CompetitionId || Registration.UserId != currentRegistration.UserId || Registration.AnimalId != currentRegistration.AnimalId)
+                {
+                    int count = _registrationService.CheckDuplicateRegistration(Registration.CompetitionId, Registration.UserId, Registration.AnimalId);
+                    if (count > 0)
+                    {
+                        await PopulateData();
+                        ViewData["Error"] = "This koi of user has been registered!";
+                        return Page();
+                    }
+                }
                 await _registrationService.UpdateAsync(Registration);
             }
             catch (DbUpdateConcurrencyException)
@@ -81,6 +93,12 @@ namespace KoiShowManagement.RazorWebApps.Pages.RegistrationPages
         private async Task<bool> RegistrationExists(int id)
         {
             return await _registrationService.GetByIdAsync(id) != null;
+        }
+        private async Task PopulateData()
+        {
+            ViewData["AnimalId"] = new SelectList(await _animalService.GetAllAsync(), "AnimalId", "AnimalName");
+            ViewData["CompetitionId"] = new SelectList(await _competitionService.GetAllAsync(), "CompetitionId", "CompetitionName");
+            ViewData["UserId"] = new SelectList(await _userService.GetAllAsync(), "UserId", "Username");
         }
     }
 }
