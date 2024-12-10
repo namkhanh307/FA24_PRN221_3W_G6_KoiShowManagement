@@ -44,7 +44,10 @@ namespace KoiShowManagement.Services
         {
             return _registrationRepository.CheckDuplicateRegistration(competitionId, userId, animalId);
         }
-
+        public async Task<IList<Registration>> SearchNew(string SelectedCompetitionName, bool CheckInStatus, string AnimalName)
+        {
+            return await _registrationRepository.SearchNew(SelectedCompetitionName, CheckInStatus, AnimalName);
+        }
 
     }
 }
