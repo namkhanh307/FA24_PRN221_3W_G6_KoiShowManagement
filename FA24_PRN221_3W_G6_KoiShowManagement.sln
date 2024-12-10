@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiShowManagement.Repositor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiShowManagement.Services", "KoiShowManagement.Services\KoiShowManagement.Services.csproj", "{89196605-A7CE-4E2E-9FD0-D27FCB564EB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoiShowManagement.RazorWebApps", "KoiShowManagement.RazorWebApps\KoiShowManagement.RazorWebApps.csproj", "{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiShowManagement.RazorWebApps", "KoiShowManagement.RazorWebApps\KoiShowManagement.RazorWebApps.csproj", "{031B8CB0-CA32-4D28-B5E6-5537ED1068A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

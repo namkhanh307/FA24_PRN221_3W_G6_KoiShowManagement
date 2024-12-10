@@ -1,5 +1,6 @@
 ﻿using KoiShowManagement.Repositories;
 using KoiShowManagement.Repositories.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,10 +41,11 @@ namespace KoiShowManagement.Services
         {
             return await _repository.RemoveAsync(categoryBankAccount);
         }
-
-        //public List<CategoryBankAccount> Search(string bankNo, string holderName, string holderTaxCode)
-        //{
-        //    return _repository.Search(bankNo, holderName, holderTaxCode);
-        //}
-    }
+        public async Task<List<FinalResult>> GetAllWithDetails()
+        { return await _repository.GetAllWithDetails(); }
+            //public List<CategoryBankAccount> Search(string bankNo, string holderName, string holderTaxCode)
+            //{
+            //    return _repository.Search(bankNo, holderName, holderTaxCode);
+            //}
+        }
 }
