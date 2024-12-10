@@ -1,117 +1,123 @@
 ﻿@page
 @model FA24_PRN221_3W_G6_KoiShowManagement.Pages.FinalResultsPage.IndexModel
-
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Final Results";
 }
 
-<h1>Index</h1>
+<h1>Final Results</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+@if (User.Identity.IsAuthenticated)
+{
+    <p>
+        <a asp-page="Create" class="btn btn-primary">Create New</a>
+    </p>
+}
+
+<form method="get" class="mb-3">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="SearchName">Result Name:</label>
+                <input type="text" class="form-control" asp-for="SearchName" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="SearchScore">Total Score:</label>
+                <input type="number" step="0.01" class="form-control" asp-for="SearchScore" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="SearchRank">Rank:</label>
+                <input type="number" class="form-control" asp-for="SearchRank" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button type="submit" class="btn btn-primary form-control">Search</button>
+            </div>
+        </div>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].ResultName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].ResultDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].TotalScore)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].Rank)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].Comments)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].IsFinalized)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].IsPublished)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].Category)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].PrizeAmount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].PrizeDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].IsDeleted)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].CategoryNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalResult[0].Competition)
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].ResultName)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].ResultDescription)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].TotalScore)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].Rank)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].Comments)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].IsFinalized)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].IsPublished)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].Category)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].Status)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].PrizeAmount)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].PrizeDescription)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].IsDeleted)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].CategoryNavigation.CategoryName)</th>
+            <th>@Html.DisplayNameFor(model => model.FinalResult[0].Competition.CompetitionName)</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.FinalResult) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ResultName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ResultDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalScore)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rank)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Comments)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsFinalized)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsPublished)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrizeAmount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrizeDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsDeleted)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryNavigation.CategoryName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Competition.CompetitionId)
-            </td>
-            <td>
-                
-                <a asp-page="./Details" asp-route-id="@item.CompetitionResultId">Details</a> |
-                    @if (User.IsInRole("Manager")){
-                <a asp-page="./Edit" asp-route-id="@item.CompetitionResultId">Edit</a> 
-                <a asp-page="./Delete" asp-route-id="@item.CompetitionResultId">Delete</a>
+        @foreach (var item in Model.FinalResult)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ResultName)</td>
+                <td>@Html.DisplayFor(modelItem => item.ResultDescription)</td>
+                <td>@Html.DisplayFor(modelItem => item.TotalScore)</td>
+                <td>@Html.DisplayFor(modelItem => item.Rank)</td>
+                <td>@Html.DisplayFor(modelItem => item.Comments)</td>
+                <td>@Html.DisplayFor(modelItem => item.IsFinalized)</td>
+                <td>@Html.DisplayFor(modelItem => item.IsPublished)</td>
+                <td>@Html.DisplayFor(modelItem => item.Category)</td>
+                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                <td>@Html.DisplayFor(modelItem => item.PrizeAmount)</td>
+                <td>@Html.DisplayFor(modelItem => item.PrizeDescription)</td>
+                <td>@Html.DisplayFor(modelItem => item.IsDeleted)</td>
+                <td>@Html.DisplayFor(modelItem => item.CategoryNavigation.CategoryName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Competition.CompetitionName)</td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.CompetitionResultId" class="btn btn-info btn-sm">Details</a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a asp-page="./Edit" asp-route-id="@item.CompetitionResultId" class="btn btn-warning btn-sm">Edit</a>
+                        <a asp-page="./Delete" asp-route-id="@item.CompetitionResultId" class="btn btn-danger btn-sm">Delete</a>
                     }
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.FinalResult.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.FinalResult.HasNextPage ? "disabled" : "";
+}
+
+<div class="d-flex justify-content-between">
+    <a asp-page="./Index"
+       asp-route-CurrentPage="@(Model.FinalResult.PageIndex - 1)"
+       asp-route-SearchName="@Model.SearchName"
+       asp-route-SearchScore="@Model.SearchScore"
+       asp-route-SearchRank="@Model.SearchRank"
+       class="btn btn-primary @prevDisabled">
+        Previous
+    </a>
+
+    <span class="mt-2">
+        Page @Model.FinalResult.PageIndex of @Model.FinalResult.TotalPages
+    </span>
+
+    <a asp-page="./Index"
+       asp-route-CurrentPage="@(Model.FinalResult.PageIndex + 1)"
+       asp-route-SearchName="@Model.SearchName"
+       asp-route-SearchScore="@Model.SearchScore"
+       asp-route-SearchRank="@Model.SearchRank"
+       class="btn btn-primary @nextDisabled">
+        Next
+    </a>
+</div>
