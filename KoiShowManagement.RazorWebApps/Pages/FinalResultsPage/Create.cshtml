@@ -2,90 +2,102 @@
 @model FA24_PRN221_3W_G6_KoiShowManagement.Pages.FinalResultsPage.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Final Result";
 }
 
-<h1>Create</h1>
-
-<h4>FinalResult</h4>
+<h1>@ViewData["Title"]</h1>
 <hr />
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="FinalResult.CompetitionResultId" />
-            <div class="form-group">
-                <label asp-for="FinalResult.CompetitionId" class="control-label"></label>
-                <select asp-for="FinalResult.CompetitionId" class ="form-control" asp-items="ViewBag.CompetitionId"></select>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="FinalResult.CompetitionId" class="control-label">Competition</label>
+                <select asp-for="FinalResult.CompetitionId" class="form-select" asp-items="ViewBag.CompetitionId">
+                    <option value="">-- Select Competition --</option>
+                </select>
+                <span asp-validation-for="FinalResult.CompetitionId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
+                <label asp-for="FinalResult.CategoryId" class="control-label">Category</label>
+                <select asp-for="FinalResult.CategoryId" class="form-select" asp-items="ViewBag.CategoryId">
+                    <option value="">-- Select Category --</option>
+                </select>
+                <span asp-validation-for="FinalResult.CategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.ResultName" class="control-label"></label>
                 <input asp-for="FinalResult.ResultName" class="form-control" />
                 <span asp-validation-for="FinalResult.ResultName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FinalResult.ResultDescription" class="control-label"></label>
-                <input asp-for="FinalResult.ResultDescription" class="form-control" />
-                <span asp-validation-for="FinalResult.ResultDescription" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.TotalScore" class="control-label"></label>
-                <input asp-for="FinalResult.TotalScore" class="form-control" />
+                <input asp-for="FinalResult.TotalScore" class="form-control" type="number" step="0.01" />
                 <span asp-validation-for="FinalResult.TotalScore" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.Rank" class="control-label"></label>
-                <input asp-for="FinalResult.Rank" class="form-control" />
+                <input asp-for="FinalResult.Rank" class="form-control" type="number" />
                 <span asp-validation-for="FinalResult.Rank" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
+                <label asp-for="FinalResult.ResultDescription" class="control-label"></label>
+                <textarea asp-for="FinalResult.ResultDescription" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="FinalResult.ResultDescription" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.Comments" class="control-label"></label>
-                <input asp-for="FinalResult.Comments" class="form-control" />
+                <textarea asp-for="FinalResult.Comments" class="form-control" rows="3"></textarea>
                 <span asp-validation-for="FinalResult.Comments" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FinalResult.IsFinalized" class="control-label"></label>
-                <input asp-for="FinalResult.IsFinalized" class="form-control" />
-                <span asp-validation-for="FinalResult.IsFinalized" class="text-danger"></span>
+
+            <div class="form-group mb-3">
+                <label asp-for="FinalResult.IsFinalized" class="control-label">Is Finalized</label>
+                <select asp-for="FinalResult.IsFinalized" class="form-select">
+                    <option value="">-- Select --</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
             </div>
-            <div class="form-group">
-                <label asp-for="FinalResult.IsPublished" class="control-label"></label>
-                <input asp-for="FinalResult.IsPublished" class="form-control" />
-                <span asp-validation-for="FinalResult.IsPublished" class="text-danger"></span>
+            <div class="form-group mb-3">
+                <label asp-for="FinalResult.IsPublished" class="control-label">Is Published</label>
+                <select asp-for="FinalResult.IsPublished" class="form-select">
+                    <option value="">-- Select --</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.Category" class="control-label"></label>
-                <input asp-for="FinalResult.Category" class="form-control" />
+                <input asp-for="FinalResult.Category" class="form-control"/>
                 <span asp-validation-for="FinalResult.Category" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FinalResult.Status" class="control-label"></label>
-                <input asp-for="FinalResult.Status" class="form-control" />
-                <span asp-validation-for="FinalResult.Status" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.PrizeAmount" class="control-label"></label>
-                <input asp-for="FinalResult.PrizeAmount" class="form-control" />
+                <input asp-for="FinalResult.PrizeAmount" class="form-control" type="number" step="0.01" />
                 <span asp-validation-for="FinalResult.PrizeAmount" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="form-group mb-3">
                 <label asp-for="FinalResult.PrizeDescription" class="control-label"></label>
-                <input asp-for="FinalResult.PrizeDescription" class="form-control" />
+                <textarea asp-for="FinalResult.PrizeDescription" class="form-control" rows="3"></textarea>
                 <span asp-validation-for="FinalResult.PrizeDescription" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FinalResult.CategoryId" class="control-label"></label>
-                <select asp-for="FinalResult.CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
-            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-page="Index" class="btn btn-secondary">Back to List</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-page="Index">Back to List</a>
 </div>
 
 @section Scripts {

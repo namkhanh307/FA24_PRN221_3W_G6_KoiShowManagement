@@ -7,41 +7,55 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using KoiShowManagement.Repositories.Models;
 using Microsoft.AspNetCore.Authorization;
+using KoiShowManagement.Services;
 
 namespace FA24_PRN221_3W_G6_KoiShowManagement.Pages.FinalResultsPage
 {
     [Authorize]
     public class CreateModel : PageModel
     {
-        private readonly KoiShowManagement.Repositories.Models.FA24_PRN221_3W_G6_KoiShowManagementContext _context;
+        private readonly FinalResultService _finalResultService;
+        private readonly FA24_PRN221_3W_G6_KoiShowManagementContext _context;
 
-        public CreateModel(KoiShowManagement.Repositories.Models.FA24_PRN221_3W_G6_KoiShowManagementContext context)
+        public CreateModel(FinalResultService finalResultService,
+            FA24_PRN221_3W_G6_KoiShowManagementContext context)
         {
+            _finalResultService = finalResultService;
             _context = context;
         }
 
         public IActionResult OnGet()
         {
-        ViewData["CategoryId"] = new SelectList(_context.CompetitionCategories, "CategoryId", "CategoryName");
-        ViewData["CompetitionId"] = new SelectList(_context.Competitions, "CompetitionId", "CompetitionId");
+            ViewData["CategoryId"] = new SelectList(_context.CompetitionCategories, "CategoryId", "CategoryName");
+            ViewData["CompetitionId"] = new SelectList(_context.Competitions, "CompetitionId", "CompetitionId");
             return Page();
         }
 
         [BindProperty]
         public FinalResult FinalResult { get; set; } = default!;
 
-        // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            try
             {
+                if (!ModelState.IsValid)
+                {
+                    ViewData["CategoryId"] = new SelectList(_context.CompetitionCategories, "CategoryId", "CategoryName");
+                    ViewData["CompetitionId"] = new SelectList(_context.Competitions, "CompetitionId", "CompetitionId");
+                    return Page();
+                }
+
+                // Bỏ phần generate ID vì sẽ dùng auto-increment
+                await _finalResultService.Create(FinalResult);
+                return RedirectToPage("./Index");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Có lỗi xảy ra: {ex.Message}");
+                ViewData["CategoryId"] = new SelectList(_context.CompetitionCategories, "CategoryId", "CategoryName");
+                ViewData["CompetitionId"] = new SelectList(_context.Competitions, "CompetitionId", "CompetitionId");
                 return Page();
             }
-
-            _context.FinalResults.Add(FinalResult);
-            await _context.SaveChangesAsync();
-
-            return RedirectToPage("./Index");
         }
     }
 }

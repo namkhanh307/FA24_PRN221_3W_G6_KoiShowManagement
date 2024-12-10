@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace KoiShowManagement.Services
 {
-    public class FinalResultService 
+    public class FinalResultService
     {
         private FinalResultsRepository _repository;
         public FinalResultService()
@@ -22,9 +22,12 @@ namespace KoiShowManagement.Services
             return await _repository.GetAllAsync();
         }
 
-        public async Task<int> Create(FinalResult categoryBankAccount)
+        public async Task<int> Create(FinalResult finalResult)
         {
-            return await _repository.CreateAsync(categoryBankAccount);
+            if (finalResult == null)
+                throw new ArgumentNullException(nameof(finalResult));
+
+            return await _repository.CreateAsync(finalResult);
         }
 
         public async Task<FinalResult> GetById(string id)
@@ -43,9 +46,9 @@ namespace KoiShowManagement.Services
         }
         public async Task<List<FinalResult>> GetAllWithDetails()
         { return await _repository.GetAllWithDetails(); }
-            //public List<CategoryBankAccount> Search(string bankNo, string holderName, string holderTaxCode)
-            //{
-            //    return _repository.Search(bankNo, holderName, holderTaxCode);
-            //}
-        }
+        //public List<CategoryBankAccount> Search(string bankNo, string holderName, string holderTaxCode)
+        //{
+        //    return _repository.Search(bankNo, holderName, holderTaxCode);
+        //}
+    }
 }
